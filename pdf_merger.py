@@ -14,6 +14,7 @@ def merge_pdfs(output_path, pdf_documents):
 def app():
   st.header('Merge PDF Files')
   st.write('Combine multiple PDF files into a single new document.')
+  st.image('assets/pdf_image.jpg', width=150)
   
   uploaded_files = st.file_uploader(label='Upload PDF files', accept_multiple_files=True, type=['pdf'])
   

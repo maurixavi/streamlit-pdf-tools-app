@@ -35,6 +35,7 @@ def generate_new_pdf(pdf_reader, num_pages, pages_to_extract):
 def app():
     st.header('Extract PDF Pages')
     st.write('Extract pages from PDF file. Get a new document containing only the pages you want.')
+    st.image('assets/pdf_image.jpg', width=150)
     
     if 'pdf_ref' not in ss:
         ss.pdf_ref = None
